@@ -197,15 +197,18 @@ def bot_help(update, context):
     sendMarkup(f'<a href="https://telegra.ph/{help}">Click and Read</a>', context.bot, update, reply_markup)
 
 botcmds = [
-
-        (f'{BotCommands.MirrorCommand}', 'Mirror'),
-        (f'{BotCommands.ZipMirrorCommand}','Mirror and upload as zip'),
-        (f'{BotCommands.UnzipMirrorCommand}','Mirror and extract files'),
-        (f'{BotCommands.QbMirrorCommand}','Mirror torrent using qBittorrent'),
-        (f'{BotCommands.QbZipMirrorCommand}','Mirror torrent and upload as zip using qb'),
-        (f'{BotCommands.QbUnzipMirrorCommand}','Mirror torrent and extract files using qb'),
-        (f'{BotCommands.WatchCommand}','Mirror yt-dlp supported link'),
-        (f'{BotCommands.ZipWatchCommand}','Mirror yt-dlp supported link as zip'),
+        (f'{BotCommands.SpeedCommand}','Speed Of The Bot'),
+        (f'{BotCommands.UpdateCommand}','Get Updated by Repository'),
+        (f'{BotCommands.HelpCommand}','Get Detailed Help'),
+        (f'{BotCommands.SearchCommand}','Get Torrent By Searching'),
+        (f'{BotCommands.StartCommand}','Start The Bot'),
+        (f'{BotCommands.ConfigMenuCommand}','Configuration of The bot'),
+        (f'{BotCommands.MirrorCommand}','Start Mirroring'), 
+        (f'{BotCommands.ZipMirrorCommand}','Start mirroring and upload as .zip'),
+        (f'{BotCommands.UnzipMirrorCommand}','Extract files'),
+        (f'{BotCommands.QbMirrorCommand}','Start Mirroring using qBittorrent'),
+        (f'{BotCommands.QbZipMirrorCommand}','Start mirroring and upload as .zip using qb'),
+        (f'{BotCommands.QbUnzipMirrorCommand}','Extract files using qBitorrent'),
         (f'{BotCommands.CloneCommand}','Copy file/folder to Drive'),
         (f'{BotCommands.LeechCommand}','Leech'),
         (f'{BotCommands.ZipLeechCommand}','Leech and upload as zip'),
@@ -215,20 +218,23 @@ botcmds = [
         (f'{BotCommands.QbUnzipLeechCommand}','Leech torrent and extract using qb'),
         (f'{BotCommands.LeechWatchCommand}','Leech yt-dlp supported link'),
         (f'{BotCommands.LeechZipWatchCommand}','Leech yt-dlp supported link as zip'),
-        (f'{BotCommands.CountCommand}','Count file/folder of Drive'),
-        (f'{BotCommands.DeleteCommand}','Delete file/folder from Drive'),
+        (f'{BotCommands.CountCommand}','Count file/folder of Drive link'),
+        (f'{BotCommands.DeleteCommand}','Delete file from Drive'),
+        (f'{BotCommands.WatchCommand}','Mirror Youtube-dl support link'),
+        (f'{BotCommands.ZipWatchCommand}','Mirror Youtube playlist link as .zip'),
         (f'{BotCommands.CancelMirror}','Cancel a task'),
-        (f'{BotCommands.CancelAllCommand}','Cancel all downloading tasks'),
-        (f'{BotCommands.ListCommand}','Search in Drive'),
-        (f'{BotCommands.LeechSetCommand}','Leech settings'),
-        (f'{BotCommands.SetThumbCommand}','Set thumbnail'),
-        (f'{BotCommands.StatusCommand}','Get mirror status message'),
-        (f'{BotCommands.StatsCommand}','Bot usage stats'),
-        (f'{BotCommands.PingCommand}','Ping the bot'),
-        (f'{BotCommands.RestartCommand}','Restart the bot'),
-        (f'{BotCommands.LogCommand}','Get the bot Log'),
-        (f'{BotCommands.HelpCommand}','Get detailed help')
-    ]
+        (f'{BotCommands.CancelAllCommand}','Cancel all tasks'),
+        (f'{BotCommands.ListCommand}','Searches files in Drive'),
+        (f'{BotCommands.StatusCommand}','Get Mirror Status message'),
+        (f'{BotCommands.StatsCommand}','Bot Usage Stats'),
+        (f'{BotCommands.PingCommand}','Ping the Bot'),
+        (f'{BotCommands.RestartCommand}','Restart the bot [owner/sudo only]'),
+        (f'{BotCommands.LogCommand}','Get the Bot Log [owner/sudo only]'),
+        (f'{BotCommands.RssHelpCommand}','Get help for RSS feeds module'),
+        (f'{BotCommands.TsHelpCommand}','Get help for Torrent search module'),
+        (f'{BotCommands.MediaInfoCommand}','Get media info for files'),
+        (f'{BotCommands.LookCommand}','Get Looking for Files')
+]
 
 def main():
     bot.set_my_commands(botcmds)
