@@ -51,5 +51,8 @@ class _BotCommands:
         self.ShortenerCommand = 'short'
         self.MediaInfoCommand = 'mediainfo'
         self.TsHelpCommand = 'tshelp'
+        self.ConfigMenuCommand = 'config'
+        self.UpdateCommand = 'update'
+        self.LookCommand = 'look'
 
 BotCommands = _BotCommands()
