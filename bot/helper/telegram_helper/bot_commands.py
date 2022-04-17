@@ -50,5 +50,6 @@ class _BotCommands:
         self.HashCommand = 'hash'
         self.ShortenerCommand = 'short'
         self.MediaInfoCommand = 'mediainfo'
+        self.TsHelpCommand = 'tshelp'
 
 BotCommands = _BotCommands()
